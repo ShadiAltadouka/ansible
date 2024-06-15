@@ -1,0 +1,11 @@
+---
+- name: Enable HTTPD
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+
+- name: Restart HTTPD
+  service:
+    name: httpd
+    state: restarted

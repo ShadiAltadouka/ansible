@@ -1,0 +1,8 @@
+---
+- name: httpd
+  yum:
+    name: httpd
+    state: latest
+  notify:
+  - Enable HTTPD
+  - Restart HTTPD
